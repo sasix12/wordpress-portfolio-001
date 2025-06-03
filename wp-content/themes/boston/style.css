@@ -1,0 +1,540 @@
+/*
+Theme Name: Boston
+Theme URI: https://shtheme.com/demosd/boston
+Author: Shtheme
+Author URI: https://themeforest.net/user/shtheme
+Description: Boston – Personal Portfolio WordPress is a highly creative, modern, visually stunning and Bootstrap 5 responsive portfolio theme. Boston is a Simple, Modern, Creative and Responsive WordPress. It will help you to presents your self even your Business/resume more smartly and easily.
+Version: 2.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: two-columns, three-columns, left-sidebar, right-sidebar, custom-background, custom-header, custom-menu, editor-style, featured-images, flexible-header, full-width-template, microformats, post-formats, rtl-language-support, sticky-post, theme-options, translation-ready
+Text Domain: Boston
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* ========TABLE OF CONTENTS==========
+00. Body, links, hgroup, paragraphs, general styles
+01. Fixed header & Navigation
+02. Section Intro (Home)
+03. Section About
+04. Section Resume
+05. Section Portfolio
+06. Section Blog
+07. Section Contact
+08. Footer
+09. Loader
+10. Responsive design
+
+/*--------------------------------------------------
+	00. Body, links, hgroup, paragraphs, general styles
+---------------------------------------------------*/
+
+
+
+body{
+	font-family: "Rubik", sans-serif;
+}
+.container{
+	max-width: 1230px;
+}
+a{
+	color: #111;
+	text-decoration: none;
+}
+a:hover{
+	color: #111;
+}
+.mb-20{
+	margin-bottom: 20px;
+}
+.mb-30{
+	margin-bottom: 30px;
+}
+.mb-70{
+	margin-bottom: 70px;
+}
+.mt-20{
+	margin-top: 20px;
+}
+.pt-200{
+	padding-top: 200px;
+}
+.text-center
+article > .media > img.lazy{
+	width: 100%;
+}
+ul.metadata{
+	padding: 0;
+	list-style: none;
+	display: flex;
+	gap: 21px;
+}
+ul.children{
+	margin-left: 100px;
+	padding-left: 0;
+}
+ul.metadata > li.metadata_item a{
+	text-transform: capitalize;
+}
+ul.metadata > li.metadata_item{
+	position: relative;
+}
+ul.metadata > li.metadata_item:before{
+	content: "|";
+	position: absolute;
+	left: -10px;
+}
+ul.metadata > li.metadata_item:first-child:before{
+	content: none;
+}
+.post-comment-wrap{
+	display: flex;
+	margin-bottom: 60px;
+}
+.post-user-comment{
+	margin-right: 20px;
+	flex: 0 0 auto;
+}
+.post-user-comment img{
+	border-radius: 100%;
+	width: 100px;
+}
+.post-comment-wrap h3{
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+.post-comment-wrap h3 span{
+	font-size: 13px;
+	margin-left: 15px;
+	font-weight: 400;
+	font-family: 'Outfit', sans-serif;
+}
+.post-comment-wrap > .post-user-content a{
+	text-transform: capitalize;
+}
+.post-comment-wrap > .post-user-content h3 a{
+	font-size: 20px;
+}
+input[type="password"], input[type="email"], input[type="text"], input[type="file"], textarea{
+	max-width: 100%;
+	margin-bottom: 15px;
+	padding: 10px 10px 10px 0px;
+	height: auto;
+	background-color: transparent;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-width: 0 0 1px;
+	border-style: solid;
+	display: block;
+	width: 100%;
+	line-height: 1.5em;
+	font-family: 'Outfit', sans-serif;
+	font-size: 15px;
+	font-weight: 300;
+	color: #100c;
+	background-image: none;
+	border-color: ease-in-out .15s, box-shadow ease-in-out .15s;
+	border: none;
+	border-bottom: 1px solid rgba(145, 118, 90, 0.2);
+}
+.button-1{
+	display: inline-block;
+	height: auto;
+	padding: 12px 26px;
+	border: 1px solid #111;
+	border-radius: 0px;
+	background-color: #fff;
+	-webkit-transition: border-color 400ms ease, color 400ms ease, background-color 400ms ease;
+	transition: border-color 400ms ease, color 400ms ease, background-color 400ms ease;
+	color: #111;
+	font-size: 13px;
+	line-height: 20px;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.button-1:hover{
+	border: 1px solid #111;
+	background-color: #111;
+	color: #fff;
+}
+.hv-sidebar ol, .hv-sidebar ul{
+	list-style: none;
+	padding-left: 0;
+}
+.hv-sidebar .widget{
+	background: #f2efeb;
+	padding: 30px;
+	margin-bottom: 30px;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.hv-sidebar .widget.search{
+	margin: 0;
+	padding: 0;
+}
+.hv-sidebar .search form{
+	position: relative;
+}
+.hv-sidebar .search form input{
+	width: 100%;
+	padding: 10px;
+	border: 0;
+	background: #fbf8f4;
+	margin-bottom: 0;
+}
+.hv-sidebar .search form button{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background-color: transparent;
+	color: #111;
+	border: 0;
+	padding: 10px;
+	cursor: pointer;
+}
+.hv-sidebar .widget-title{
+	margin-bottom: 15px;
+}
+.hv-sidebar .widget-title h6{
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e5e1dc;
+	font-size: 24px;
+	line-height: 1.75em;
+	margin-bottom: 15px;
+	color: #111;
+}
+.hv-sidebar .widget .recent li{
+	display: block;
+	overflow: hidden;
+	display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.hv-sidebar .widget ul li{
+	margin-bottom: 15px;
+	color: #111;
+	font-size: 15px;
+	line-height: 1.5em;
+}
+.hv-sidebar .widget .recent .thum{
+	overflow: hidden;
+	float: left;
+}
+.hv-sidebar .widget .recent .thum img{
+	width: 90px;
+	height: 60px;
+	object-fit: cover;
+	margin-right: 15px;
+	border: 1px solid #fbf8f4;
+}
+.hv-sidebar .widget .recent a{
+	margin-left: 0;
+	max-width: calc(100% - 105px);
+}
+.hv-sidebar .widget div.tagcloud > a{
+	margin: 3px;
+	padding: 8px 20px;
+	background-color: #fff;
+	border: 1px solid #fff;
+	color: #14100c;
+	float: left;
+	font-size: 15px !important;
+	line-height: 1.5em;
+	border-radius: 5px;
+}
+.hv-sidebar .widget div.tagcloud > a:hover{
+	color: #fff;
+	background-color: #111;
+	border-color: #111;
+}
+.post-user-content{
+	position: relative;
+}
+a.comment-reply-link{
+	position: absolute;
+	top: -5px;
+	right: 0;
+	border: 1px solid #111;
+	padding: 5px 8px;
+	border-radius: 5px;
+	background-color: #f2efeb;
+	font-weight: 500;
+	font-size: 15px;
+	font-family: "Outfit", sans-serif;
+}
+.media > img.lazy{
+	width: 100%;
+	max-height: 500px;
+	object-fit: cover;
+}
+.form-comment .title{
+	position: relative;
+}
+.form-comment .title > a{
+	text-transform: capitalize;
+}
+.form-comment small > a#cancel-comment-reply-link{
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 1px solid #111;
+	padding: 5px 8px;
+	border-radius: 5px;
+	background-color: #f2efeb;
+	font-weight: 500;
+	font-size: 15px;
+	font-family: "Outfit", sans-serif;
+}
+.blog-pagination-wrap li{
+	display: inline-block;
+	margin: 0 5px;
+}
+.blog-pagination-wrap li > .page-numbers{
+	background: #f2efeb;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #14100c;
+	font-weight: 400;
+	border: 1px solid #f2efeb;
+	font-family: 'Outfit', sans-serif;
+	font-size: 15px;
+	border-radius: 100%;
+}
+.blog-pagination-wrap li > .page-numbers:hover{
+	background-color: #111;
+	border: 1px solid #111;
+	color: #fff;
+}
+.blog-pagination-wrap li > .page-numbers.current{
+	background-color: #111;
+	border: 1px solid #111;
+	color: #fff;
+}
+div.dialog-lightbox-widget{
+	display: none !important;
+}
+.nav a + a{
+	margin-left: 18px;
+}
+.main-header .navbar-nav > li:hover > .nav-link span{
+	background: var(--px-theme-1);
+	cursor: pointer;
+}
+li.dropdown:hover > ul{
+	display: block;
+	padding: 0;
+}
+ul.dropdown-menu li{
+	position: relative;
+}
+ul.dropdown-menu li:hover{
+	background: var(--px-theme-1);
+}
+ul.dropdown-menu li a{
+	padding: 0 5px;
+	line-height: 55px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #18171C;
+}
+ul.dropdown-menu li a span{
+	padding: 9px 20px;
+	border-radius: 30px;
+}
+ul.dropdown-menu li:hover a span{
+	color: #18171c;
+}
+ul.dropdown-menu ul.dropdown-menu{
+	left: 100%;
+	top: 0;
+}
+.bg-img{
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.notfound{
+	position: relative;
+	background-blend-mode: overlay;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	height: 100vh;
+}
+.v-middle{
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translate(0%, -50%);
+	transform: translate(0%, -50%);
+}
+.notfound h1{
+	font-size: 180px;
+	margin-bottom: 0px;
+	position: relative;
+	line-height: 1em;
+}
+.notfound h2{
+	font-size: 45px;
+	position: relative;
+	margin-bottom: 5px;
+}
+span.cap{
+	text-transform: capitalize;
+}
+.search_custom form{
+	position: relative;
+}
+.search_custom form input{
+	padding-right: 40px;
+}
+.search_custom form button{
+	position: absolute;
+	right: 0;
+	top: 10px;
+	border: 0;
+	background: none;
+}
+.wpcf7-not-valid-tip{
+	color: #111;
+}
+.wpcf7 form .wpcf7-response-output{
+	border: 0;
+	padding: 0;
+	margin-left: 0;
+}
+.comment-form-cookies-consent{
+	display: none;
+}
+
+
+
+
+
+
+@media screen and (max-width: 991.98px){
+	ul.children{
+		margin-left: 75px;
+	}
+	.pt-200{
+		padding-top: 160px;
+	}
+}
+@media screen and (max-width: 767.98px){
+	.post-comment-wrap{
+		display: block;
+	}
+	.post-user-comment{
+		margin-bottom: 20px;
+	}
+	ul.children{
+		margin-left: 50px;
+	}
+	.pt-200{
+		padding-top: 120px;
+	}
+	.form-comment small > a{
+		position: unset;
+	}
+	/*a.comment-reply-link{
+		position: unset;
+	}*/
+}
+
+.wp-block-group h2.wp-block-heading {
+    position: relative;
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+.widget_block.widget_search label.wp-block-search__label {
+    display: none;
+}
+.widget_block .wp-block-search .wp-block-search__inside-wrapper {
+    position: relative;
+}
+.widget_block .wp-block-search .wp-block-search__input {
+    width: 100%;
+    padding: 10px;
+    border: 0;
+    background: #f4f5f7;
+    margin-bottom: 0;
+    border-radius: 0px;
+}
+.widget_block .wp-block-group .wp-block-group__inner-container ul li {
+    margin-bottom: 20px;
+    color: #040b11;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    line-height: 28px;
+}
+.widget_block .wp-block-search .wp-block-search__inside-wrapper .wp-block-search__button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    color: #040b11;
+    border: 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+.widget_block .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts__list.wp-block-latest-posts li {
+    margin-bottom: 20px;
+    color: #040b11;
+    font-size: 16px;
+    line-height: 1.5em;
+    border-bottom: 1px dashed #cccccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    line-height: 40px;
+}
+.widget_block .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts__list.wp-block-latest-posts li:last-child {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px dashed #cccccc;
+}
+.widget_block .wp-block-group .wp-block-group__inner-container .wp-block-latest-comments .wp-block-latest-comments__comment {
+    color: #040b11;
+    font-size: 16px;
+    line-height: 1.5em;
+    border-bottom: 1px dashed #cccccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    line-height: 40px;
+}
+.widget_block .wp-block-group .wp-block-group__inner-container .wp-block-latest-comments .wp-block-latest-comments__comment:last-child {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px dashed #cccccc;
+}
+.sidebar_widget.widget.widget_block.widget_search .wp-block-search__button-outside .wp-block-search__inside-wrapper {
+    margin: 0px 0px;
+}
+.sidebar__widget .wp-block-group__inner-container .wp-block-latest-comments {
+    padding-left: 0rem;
+}
+.wp-block-group ol.wp-block-latest-comments {
+    box-sizing: border-box;
+    margin-left: 0;
+    padding-left: 0px;
+}
+.widget_block .wp-block-group .wp-block-group__inner-container .wp-block-latest-posts__list.wp-block-latest-posts li a{
+    color: inherit;
+}
+.widget_block .wp-block-group .wp-block-group__inner-container .wp-block-latest-comments .wp-block-latest-comments__comment a{
+    color: inherit;
+}

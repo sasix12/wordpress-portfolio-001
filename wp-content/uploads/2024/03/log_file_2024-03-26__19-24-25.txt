@@ -1,0 +1,56 @@
+
+---Downloaded files---
+The import files for: Home were successfully downloaded!
+Initial max execution time = 480
+Files info:
+Site URL = https://gap73.web99x.com
+Data file = /home/u999089476/domains/web99x.com/public_html/gap73/wp-content/themes/brofolio/sample-data/contents-demo.xml
+Widget file = /home/u999089476/domains/web99x.com/public_html/gap73/wp-content/themes/brofolio/sample-data/widget-settings.json
+Customizer file = /home/u999089476/domains/web99x.com/public_html/gap73/wp-content/themes/brofolio/sample-data/customizer-data.dat
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+Blog Sidebar : 
+
+Search - No Title - Imported
+broflio Footer Posts Image - Recent News - Imported
+Categories - No Title - Imported
+Tag Cloud - No Title - Imported
+
+Footer 1 : 
+
+Custom HTML - No Title - Imported
+
+Footer 2 : 
+
+Navigation Menu - Quick Link - Imported
+
+Footer 3 : 
+
+Navigation Menu - About - Imported
+
+Footer 4 : 
+
+Broflio Footer Contact Form - No Title - Imported
+
+Service Sidebar : 
+
+Block - No Title - Widget already exists
+Block - No Title - Widget already exists
+
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+

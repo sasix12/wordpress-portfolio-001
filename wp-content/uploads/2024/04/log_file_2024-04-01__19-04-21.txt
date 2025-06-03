@@ -1,0 +1,28 @@
+
+---Downloaded files---
+The import files for: Import Boston were successfully downloaded!
+Initial max execution time = 300
+Files info:
+Site URL = https://gap73.web99x.com
+Data file = /home/u999089476/domains/web99x.com/public_html/gap73/wp-content/themes/boston/sample-data/contents-demo.xml
+Widget file = /home/u999089476/domains/web99x.com/public_html/gap73/wp-content/themes/boston/sample-data/widget-settings.json
+Customizer file = /home/u999089476/domains/web99x.com/public_html/gap73/wp-content/themes/boston/sample-data/customizer-data.dat
+Redux files:
+not defined!
+
+---Importing widgets---
+Primary Sidebar : 
+
+Search - No Title - Imported
+ Recent Posts - No Title - Imported
+Archives - No Title - Imported
+Categories - No Title - Imported
+Tag Cloud - No Title - Imported
+
+
+
+---Importing customizer settings---
+Error: The customizer import file is not in a correct format. Please make sure to use the correct customizer import file.
+
+---ocdi/after_import---
+
